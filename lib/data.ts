@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import newInTownImg from "@/public/mern-new-in-town.png";
-import dasBesteDesTagesImg from "@/public/nextjs-das-beste-des-tages.png";
-import rickAndMortyImg from "@/public/react-rick-and-morty.png";
+import newInTownImg from "@/public/assets/mern-new-in-town.png";
+import dasBesteDesTagesImg from "@/public/assets/nextjs-das-beste-des-tages.png";
+import rickAndMortyImg from "@/public/assets/react-rick-and-morty.png";
 
 export const links = [
   {
@@ -32,6 +32,8 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
+// Exporting "as const" is a Typescript 'feature': it will not just say this is typeof "string" !!
+// It will be explicitly and exactly THESE strings ! E.g. name: "Home" etc. and not just name: "string"
 
 export const experiencesData = [
   {
