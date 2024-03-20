@@ -12,6 +12,7 @@ import { FaGithubSquare } from "react-icons/fa";
 export default function Intro() {
   return (
     <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+      {/* ===== IMAGE & EMOJI ===== */}
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -53,8 +54,10 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.p
-        className="mb-10 mt-4 px-4 text-2xl font-medium 
+
+      {/* ===== INTRO TEXT ===== */}
+      <motion.h1
+        className="mt-10 mb-16 px-4 text-2xl font-medium 
         !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -64,8 +67,9 @@ export default function Intro() {
         background in <span className="font-bold">design</span> and photography.
         I enjoy building <span className="italic">sites & apps</span>. My focus
         is <span className="underline">React (Next.js)</span>.
-      </motion.p>
+      </motion.h1>
 
+      {/* ===== LINKS & BUTTONS ===== */}
       <motion.div
         className="flex flex-col sm:flex-row 
         items-center justify-center gap-4 px-4 text-lg"
