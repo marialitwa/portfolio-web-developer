@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/no-unescaped-entities": 0
+    // Putting this rule to "off" or 0 let's me use regular apostrophies 
+    // in the intro comp. text block instead of I&apos;m for I'm
+    // Instead of "off" I can set the value to 0 or false to turn it off. Or 1 if I want it to be on/true. 
+    // ("off" == 0 == false) && ("on" == 1 == true)
+  }
 }

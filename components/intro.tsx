@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Intro() {
   return (
-    <section>
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -45,11 +45,22 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            🦄
+            🦩
           </motion.span>
-          {/* <span className="text-4xl absolute bottom-0 right-0">🦋</span> */}
         </div>
       </div>
+
+      <motion.p
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <span className="font-bold">Hej, I'm Maria.</span> I'm a{" "}
+        <span className="font-bold">frontend web developer</span> with a{" "}
+        <span className="font-bold">background in design</span> and photography.
+        I enjoy building <span className="italic">sites & apps</span>. My focus
+        is <span className="underline">React (Next.js)</span>.
+      </motion.p>
     </section>
   );
 }
