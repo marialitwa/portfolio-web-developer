@@ -21,6 +21,8 @@ export default function Project({
   tags,
   imageUrl,
 }: ProjectProps) {
+  // Scroll animation to enlarge each project card by entering the viewport.
+  // Here the div wrapper is animated though for better smoothness
   // REVIEW useRef
   const ref = useRef<HTMLDivElement>(null);
   // REVIEW https://www.framer.com/motion/use-scroll/
