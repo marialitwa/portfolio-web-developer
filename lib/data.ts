@@ -34,6 +34,7 @@ export const links = [
 ] as const;
 // Exporting "as const" is a Typescript 'feature': it will not just say this is typeof "string" !!
 // It will be explicitly and exactly THESE strings ! E.g. name: "Home" etc. and not just name: "string"
+// When data is coming from a backend do not use this "as const" method, because you don't know exactly what data it's going to be
 
 export const experiencesData = [
   {
@@ -64,24 +65,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "New in Town",
+    title: "New in Town.",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+      "Collect all new favorite spots in one app to discover the place you have moved to.",
     tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Styled Components"],
     imageUrl: newInTownImg,
   },
   {
     title: "Das Beste des Tages.",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.",
+      "My app helps you to focus on the positive in everyday life and serves as a motivation booster. Record your daily highlights and save your joyful moments as favorites.",
     tags: ["React", "Next.js", "Styled Components"],
     imageUrl: dasBesteDesTagesImg,
   },
   {
     title: "Rick & Morty",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.",
-    tags: ["React", "Styled Components"],
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+    tags: ["React", "Styled Components", "REST-API",],
     imageUrl: rickAndMortyImg,
   },
 ] as const;
