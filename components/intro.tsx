@@ -1,17 +1,37 @@
 "use client";
 // Motion is using useEffect/useState that is why I need to declare this component to a client component
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  // START of functionality to set active section when section is within the viewport when scrolling
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    // defining threshold: Only when 75% of the section is in view the section is set to active
+    // Otherwise the section becomes active with the first pixel showing up in the viewpost
+  });
+  // console.log(inView);
+
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
+  // END of functionality
+
   return (
     <section
+      ref={ref}
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
       id="home"
     >
