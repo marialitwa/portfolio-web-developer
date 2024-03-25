@@ -1,11 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState } from "react";
-import { links } from "@/lib/data";
-
-type SectionName = (typeof links)[number]["name"];
-// typeof links from data.ts => anyone that exists in there declared with [number]
-// ["name"] specifying to the name property
+import type { SectionName } from "@/lib/types";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
