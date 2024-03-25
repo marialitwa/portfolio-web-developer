@@ -20,13 +20,13 @@ export default function Intro() {
   });
   // console.log(inView);
 
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - timeOfLastClick) {
       setActiveSection("Home");
     }
-  }, [inView, setActiveSection]);
+  }, [inView, setActiveSection, timeOfLastClick]);
   // END of functionality
 
   return (
