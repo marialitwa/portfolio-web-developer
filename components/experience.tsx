@@ -38,12 +38,11 @@ export default function Experience() {
               }}
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
-              <p className="font-normal !mt-0">{experience.location}</p>
+              <p className="!font-normal !mt-0">{experience.location}</p>
               {/* !mt-0: Exclamation mark overrides predefined styles of a third-party component */}
               <p className="!mt-1 !font-normal text-gray-700">
                 {experience.description}
               </p>
-              <p>{experience.date}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
