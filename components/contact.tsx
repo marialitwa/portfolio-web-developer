@@ -42,22 +42,24 @@ export default function Contact() {
       </p>
 
       <form className="flex flex-col mt-10">
-        <label htmlFor="email"></label>
+        <label htmlFor="email" aria-label="Email"></label>
         <input
           className="h-14 px-4 rounded-lg borderBlack outline-gray-600"
           type="email"
           id="email"
           name="senderEmail"
           placeholder="Your email"
+          // client side validation:
           maxLength={500}
           required
         />
-        <label htmlFor="message"></label>
+        <label htmlFor="message" aria-label="Message"></label>
         <textarea
           className="h-52 my-3 rounded-lg p-4 borderBlack outline-gray-600"
           name="message"
           id="message"
           placeholder="Your Message"
+          // client side validation:
           maxLength={5000}
           required
         ></textarea>
