@@ -106,7 +106,7 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center 
           gap-2 rounded-full font-medium outline-none focus:scale-110 
           hover:scale-110 active:scale-105 transition cursor-pointer 
-          border border-black/10"
+          borderBlack"
         >
           Download CV{" "}
           <HiDownload
@@ -121,7 +121,7 @@ export default function Intro() {
           className="bg-white p-4 text-gray-800 flex 
           items-center gap-2 rounded-full focus:scale-[1.15] 
           hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition 
-          cursor-pointer border border-black/10"
+          cursor-pointer borderBlack"
         >
           <BsLinkedin />
         </a>
