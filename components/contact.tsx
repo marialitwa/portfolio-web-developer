@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { sendEmail } from "@/server-actions/sendEmail";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -41,14 +42,25 @@ export default function Contact() {
         or through this form.
       </p>
 
-      <form className="flex flex-col mt-10">
+      <form
+        className="flex flex-col mt-10"
+        action={async (formData) => {
+          await sendEmail(formData);
+          // New feature: with formData.get() I can access the input values!
+          // This is running on the client-side only
+          // console.log("Running on CLIENT:");
+          // console.log(formData.get("senderEmail"));
+          // console.log(formData.get("message"));
+          // Check sendEmail.ts for server side rendering/server action
+        }}
+      >
         <label htmlFor="email" aria-label="Email"></label>
         <input
           className="h-14 px-4 rounded-lg borderBlack outline-gray-600"
           type="email"
           id="email"
           name="senderEmail"
-          placeholder="Your email"
+          placeholder="ada.lovelace@example.com"
           // client side validation:
           maxLength={500}
           required
