@@ -7,7 +7,10 @@ const nextConfig = {
                 hostname: "images.squarespace-cdn.com"
             }
         ]
-    }
+    },
+    // experimental: {
+    //     serverActions: true
+    // }
 }
 
 module.exports = nextConfig
