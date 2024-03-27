@@ -105,8 +105,9 @@ export const skillsData = [
   "MongoDB",
   "mongoose",
   "Express.js",
+  "Postman",
   "npm",
-  "Accessibility/A11y",
+  "Accessibility",
   "Agile Methods",
   "SCRUM",
   
