@@ -6,6 +6,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/server-actions/sendEmail";
 import SubmitButton from "./submit-btn";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -45,7 +46,19 @@ export default function Contact() {
       <form
         className="flex flex-col mt-10"
         action={async (formData) => {
-          await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            // alert(error); use toaster instead:
+            toast.error(error);
+            return;
+          }
+
+          // alert("Email sent successfully!"); use toaster instead:
+          toast.success("Email sent successfully!", {
+            position: "bottom-center",
+          });
+
           // New feature: with formData.get() I can access the input values!
           // This is running on the client-side only
           // console.log("Running on CLIENT:");
