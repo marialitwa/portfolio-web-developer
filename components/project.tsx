@@ -49,14 +49,18 @@ export default function Project({
       <section
         className="bg-gray-100 max-w-[42rem] border border-black/5 
                     rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem]
-                     hover:bg-gray-200 transition group-odd:pl-8"
+                     hover:bg-gray-200 transition group-odd:pl-8
+                     dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
+                     dark:border dark:border-white/5"
       >
         <div
           className="px-5 pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
-                    flex flex-col h-full group-odd:ml-[18rem]"
+                    flex flex-col h-full group-odd:ml-[18rem] "
         >
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 text-gray-700 leading-relaxed">{description}</p>
+          <p className="mt-2 text-gray-700 leading-relaxed dark:text-white/70">
+            {description}
+          </p>
           <ul
             className="flex flex-wrap gap-2 mt-4 
                          sm:mt-auto"
@@ -64,7 +68,8 @@ export default function Project({
             {tags.map((tag, index) => (
               <li
                 className="bg-black/[0.8] text-[0.7rem] text-white uppercase 
-                            tracking-wider px-3 py-1 rounded-full"
+                            tracking-wider px-3.5 py-1.5 rounded-full
+                             dark:text-white/70 dark:bg-black/55"
                 key={index}
               >
                 {tag}

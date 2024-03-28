@@ -15,4 +15,8 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class",
+  // NOTE Needs this addition so that the user can apply dark mode manually and not only through PC system settings
+  // Also need to add => document.documentElement.classList.add("dark" // "light") in theme-switch.tsx;
+  
 }
