@@ -42,7 +42,7 @@ export default function Intro() {
               // default quality set by Next.js is 75 or 80
               priority={true}
               // => image will load as fast as possible
-              className="h-24 w-24 object-cover rounded-full border-[0.25rem] border-white shadow-xl"
+              className="h-24 w-24 object-cover rounded-full border-[0.22rem] border-white shadow-xl dark:border-opacity-20"
               // object-cover will preserve aspect-ratio
             />
           </motion.div>
@@ -112,7 +112,7 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center 
           gap-2 rounded-full font-medium outline-none focus:scale-110 
           hover:scale-110 active:scale-105 transition cursor-pointer 
-          borderBlack"
+          borderBlack dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload
@@ -127,7 +127,7 @@ export default function Intro() {
           className="bg-white p-4 text-gray-800 flex 
           items-center gap-2 rounded-full focus:scale-[1.15] 
           hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition 
-          cursor-pointer borderBlack"
+          cursor-pointer borderBlack dark:bg-white/10 dark:text-white/75"
         >
           <BsLinkedin />
         </a>
@@ -139,7 +139,7 @@ export default function Intro() {
           items-center gap-2 rounded-full text-[1.35rem] 
           focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 
           active:scale-105 transition 
-          cursor-pointer borderBlack"
+          cursor-pointer borderBlack dark:bg-white/10 dark:text-white/75"
         >
           <FaGithubSquare />
         </a>
