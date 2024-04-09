@@ -22,9 +22,10 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>{" "}
       <p className="mb-3">
         After graduating with a diploma degree in{" "}
-        <span className="font-medium">Communications Design</span> and working
-        for 10 years as a photographer, I decided to pursue my passion for
-        programming. I enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium">Communications Design</span> at FH
+        Dortmund and working for 10 years as a documentary & portrait
+        photographer, I decided to pursue my passion for programming. I enrolled
+        in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the

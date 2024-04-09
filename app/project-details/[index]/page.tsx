@@ -76,7 +76,7 @@ export default function ProjectDetailsPage() {
           className="w-[55rem] sm:mb-40 border border-white border-opacity-40
          bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8"
         >
-          <h3 className="text-[1.35rem] capitalize mb-6 text-center">
+          <h3 className="text-[1.35rem] capitalize mb-8 text-center">
             Tech stack
           </h3>
           <ul className="mb-6 flex flex-wrap justify-center gap-1.5 text-gray-800">
@@ -84,7 +84,7 @@ export default function ProjectDetailsPage() {
               (technology, index) => (
                 <li
                   key={index}
-                  className=" bg-white borderBlack rounded-xl px-5 py-3
+                  className=" bg-gray-100 borderBlack rounded-xl px-5 py-3
                   dark:bg-white/10 dark:text-white/80 dark:border dark:border-white/5"
                 >
                   {technology}

@@ -15,11 +15,11 @@ type ProjectProps = {
         "React",
         "TypeScript",
         "MongoDB",
-        "Tailwind",
+        "Tailwind CSS",
         "Styled Components"
       ]
-    | readonly ["React", "Next.js", "Styled Components"]
-    | readonly ["React", "Styled Components", "REST-API"];
+    | readonly ["Next.js", "JavaScript", "CSS", "Styled Components"]
+    | readonly ["React", "JavaScript", "REST-API", "CSS", "Styled Components"];
   imageUrl: StaticImageData;
   index: number;
 };
@@ -62,37 +62,20 @@ export default function Project({
 
       <section
         className="bg-gray-100 max-w-[42rem] border border-black/5 
-                    rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem]
+                    rounded-lg overflow-hidden sm:pr-8 relative sm:h-[24rem]
                      hover:bg-gray-200 transition sm:group-odd:pl-8
                      dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
                      dark:border dark:border-white/5"
       >
         <div
-          className="px-5 pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
+          className="px-5 pt-4 pb-10 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] 
                     flex flex-col h-full sm:group-odd:ml-[18rem] "
         >
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 text-gray-700 leading-relaxed dark:text-white/70">
-            {description}
-          </p>
-
-          {/* {projectDetails.map((project) => (
-            <Link
-              key={project.id}
-              href={`/project-details/${project.id}`}
-              className="underline font-semibold text-gray-800 text-sm uppercase mt-4 flex items-center"
-            >
-              View project
-              <BsArrowRight
-                className="mx-1
-          hover:translate-x-1 transition -rotate-45 text-sm -translate-y-[0.03rem] font-extrabold"
-              />
-            </Link>
-          ))} */}
+          <h3 className="text-2xl font-semibold mb-2">{title}</h3>
 
           <Link
             href={`/project-details/${index}`}
-            className="underline font-semibold text-gray-800 text-sm uppercase mt-4 flex items-center"
+            className="underline text-[0.9rem] text-gray-800 uppercase tracking-wider mt-4 mb-3 flex items-center"
           >
             View project
             <BsArrowRight
@@ -100,9 +83,14 @@ export default function Project({
           hover:translate-x-1 transition -rotate-45 text-sm -translate-y-[0.03rem] font-extrabold"
             />
           </Link>
+
+          <p className="mt-2 text-gray-700 leading-relaxed dark:text-white/70">
+            {description}
+          </p>
+
           <ul
-            className="flex flex-wrap gap-2 mt-4 
-                         sm:mt-auto"
+            className="flex flex-wrap gap-2 mt-6
+            sm:mt-auto"
           >
             {tags.map((tag, index) => (
               <li

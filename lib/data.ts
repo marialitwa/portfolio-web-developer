@@ -69,7 +69,7 @@ export const projectsData = [
     title: "New in Town.",
     description:
       "Collect all new favorite spots in one app to discover the place you have moved to.",
-    tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Styled Components"],
+    tags: ["React", "TypeScript", "MongoDB", "Tailwind CSS", "Styled Components"],
     imageUrl: newInTownImg,
 
   },
@@ -77,15 +77,14 @@ export const projectsData = [
     title: "Das Beste des Tages.",
     description:
       "My app helps you to focus on the positive in everyday life and serves as a motivation booster.",
-      // Record your daily highlights and save your joyful moments as favorites.
-    tags: ["React", "Next.js", "Styled Components"],
+    tags: ["Next.js", "JavaScript", "CSS", "Styled Components"],
     imageUrl: dasBesteDesTagesImg,
   },
   {
     title: "Rick & Morty",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
-    tags: ["React", "Styled Components", "REST-API",],
+      "Discover the multi-dimensional world of Rick & Morty characters.",
+    tags: ["React", "JavaScript", "REST-API", "CSS", "Styled Components" ],
     imageUrl: rickAndMortyImg,
   },
 ] as const;
