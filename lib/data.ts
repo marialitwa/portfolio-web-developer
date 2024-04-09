@@ -65,16 +65,19 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+  
     title: "New in Town.",
     description:
       "Collect all new favorite spots in one app to discover the place you have moved to.",
     tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Styled Components"],
     imageUrl: newInTownImg,
+
   },
-  {
+  { 
     title: "Das Beste des Tages.",
     description:
-      "My app helps you to focus on the positive in everyday life and serves as a motivation booster. Record your daily highlights and save your joyful moments as favorites.",
+      "My app helps you to focus on the positive in everyday life and serves as a motivation booster.",
+      // Record your daily highlights and save your joyful moments as favorites.
     tags: ["React", "Next.js", "Styled Components"],
     imageUrl: dasBesteDesTagesImg,
   },
@@ -87,6 +90,37 @@ export const projectsData = [
   },
 ] as const;
 
+export const projectDetails = [
+  
+  {
+    id: 1,
+    projectTitle: "New in Town.",
+    projectDescription: "MERN: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
+    techStack: ["React", "MongoDB", "Express", "Node.js", "Tailwind CSS", "Styled Components" ], 
+    websiteUrl: "https://mern-new-in-town.vercel.app/",
+    githubUrl: "https://github.com/marialitwa/mern-new-in-town",   
+  },
+  {
+    id: 2,
+    projectTitle: "Das Beste des Tages.",
+    projectDescription: "My App Das Beste des Tages. (The Best of Your Day.) helps to focus on the positive things on a daily basis. In the mornings you can reflect on what you're looking forward to today. In the evenings about what was your highlight during the day, what made you feel happy. My favorite feature is that you can treasure your chosen highlights, and that can serve as your feel good booster whenever you need one. I developed this app as my capstone project during the final four weeks of the neue fische Web Development Bootcamp in winter 2022. Please watch out: The design is optimized for mobile usage. Please switch your browser to responsive mode (iPhone SE/6/7/8).",
+    techStack: ["React", "Next.js", "Styled Components", "LocalStorage" ], 
+    websiteUrl: "https://das-beste-des-tages.vercel.app/",
+    githubUrl: "https://github.com/marialitwa/capstone-project",   
+  },
+  {
+    id: 3,  
+    projectTitle: "Rick & Morty.",
+    projectDescription: "NEXT.JS: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
+    techStack: ["Next.js", "Styled Components" ], 
+    websiteUrl: "",
+    githubUrl: "", 
+
+  }
+   
+
+] as const;
+
 export const skillsData = [
   "HTML",
   "CSS",
@@ -96,7 +130,7 @@ export const skillsData = [
   "Next.js",
   "Git",
   "GitHub",
-  "Tailwind",
+  "Tailwind CSS",
   "Styled Components",
   "Framer Motion",
   "Bootstrap",

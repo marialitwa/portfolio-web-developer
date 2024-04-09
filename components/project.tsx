@@ -1,25 +1,39 @@
 "use client";
 
-import { projectsData } from "@/lib/data";
+import { projectDetails, projectsData } from "@/lib/data";
 import { useScroll, motion, useTransform } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
+import { BsArrowRight } from "react-icons/bs";
+
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags:
+    | readonly [
+        "React",
+        "TypeScript",
+        "MongoDB",
+        "Tailwind",
+        "Styled Components"
+      ]
+    | readonly ["React", "Next.js", "Styled Components"]
+    | readonly ["React", "Styled Components", "REST-API"];
+  imageUrl: StaticImageData;
+  index: number;
+};
 
 // REVIEW
-// type ProjectProps = {
-//   title: string;
-//   description: string;
-//   tags: string; => does not work
-//   imageUrl: StaticImageData;
-// };
 // More specific type:
-type ProjectProps = (typeof projectsData)[number];
+// type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  index,
 }: ProjectProps) {
   // Scroll animation to enlarge each project card by entering the viewport.
   // Here the div wrapper is animated though for better smoothness
@@ -61,6 +75,31 @@ export default function Project({
           <p className="mt-2 text-gray-700 leading-relaxed dark:text-white/70">
             {description}
           </p>
+
+          {/* {projectDetails.map((project) => (
+            <Link
+              key={project.id}
+              href={`/project-details/${project.id}`}
+              className="underline font-semibold text-gray-800 text-sm uppercase mt-4 flex items-center"
+            >
+              View project
+              <BsArrowRight
+                className="mx-1
+          hover:translate-x-1 transition -rotate-45 text-sm -translate-y-[0.03rem] font-extrabold"
+              />
+            </Link>
+          ))} */}
+
+          <Link
+            href={`/project-details/${index}`}
+            className="underline font-semibold text-gray-800 text-sm uppercase mt-4 flex items-center"
+          >
+            View project
+            <BsArrowRight
+              className="mx-1
+          hover:translate-x-1 transition -rotate-45 text-sm -translate-y-[0.03rem] font-extrabold"
+            />
+          </Link>
           <ul
             className="flex flex-wrap gap-2 mt-4 
                          sm:mt-auto"

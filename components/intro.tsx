@@ -47,7 +47,7 @@ export default function Intro() {
             />
           </motion.div>
           {/* EMOJI optional */}
-          <motion.span
+          {/* <motion.span
             className="text-4xl absolute bottom-0 right-0"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -60,7 +60,7 @@ export default function Intro() {
             }}
           >
             🦩
-          </motion.span>
+          </motion.span> */}
         </div>
       </div>
 
