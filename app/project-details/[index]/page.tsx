@@ -23,17 +23,17 @@ export default function ProjectDetailsPage() {
   // console.log(params);
 
   return (
-    <>
+    <div className="scroll-mt-32 mb-28">
       <header className="z-[999] relative">
         <button
-          className="fixed top-5 left-5 px-5 py-2 text-[0.9rem] font-medium text-gray-600 rounded-full border border-white border-opacity-40
+          className="fixed top-5 left-5 px-5 py-2 text-[0.9rem] font-medium capitalize text-gray-600 rounded-full border border-white border-opacity-40
         bg-white bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] 
         
         dark:bg-gray-950 dark:bg-opacity-75 dark:border-black/40"
           type="button"
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/#projects")}
         >
-          Home
+          Back
         </button>
       </header>
       <div className="flex flex-col items-center -mt-6">
@@ -79,7 +79,7 @@ export default function ProjectDetailsPage() {
           <h3 className="text-[1.35rem] capitalize mb-8 text-center">
             Tech stack
           </h3>
-          <ul className="mb-6 flex flex-wrap justify-center gap-1.5 text-gray-800">
+          <ul className="mb-6 flex flex-wrap justify-center gap-2.5 text-gray-800">
             {projectDetails[Number(index)].techStack.map(
               (technology, index) => (
                 <li
@@ -102,18 +102,10 @@ export default function ProjectDetailsPage() {
             Problems and thought process
           </h3>
           <p className="leading-7">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            {projectDetails[Number(index)].textAboutProcess}
           </p>
         </section>
       </div>
-    </>
+    </div>
   );
 }

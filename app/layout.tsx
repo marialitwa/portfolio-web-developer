@@ -10,9 +10,9 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Frontend Web Developer | Maria Litwa",
+  title: "Web Developer Berlin | Maria Litwa",
   description:
-    "Maria Litwa is a Frontend Web Developer with a Design and Photography background.",
+    "Maria Litwa is a passionate Frontend Web Developer with a background in design and photography.",
 };
 
 export default function RootLayout({
