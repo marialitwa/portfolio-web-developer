@@ -65,7 +65,7 @@ export default function ThemeContextProvide({
 export function useTheme() {
   const context = useContext(ThemeContext);
 
-  // NOTE Deal with possible type of null here, otherise I would need to take care of null everywhere where I am using the context!
+  // NOTE Deal with possible type of null here, otherwise I would need to take care of null everywhere where I am using the context!
   if (context === null) {
     throw new Error("useTheme must be used within a ThemeContextProvider");
   }

@@ -5,6 +5,7 @@ import { projectDetails } from "@/lib/data";
 import SectionHeading from "@/components/section-heading";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 type ProjectDetailsProps = {
   projectTitle: string;
@@ -20,6 +21,8 @@ export default function ProjectDetailsPage() {
 
   const index = params.index as string;
 
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   // console.log(params);
 
   return (
@@ -31,7 +34,11 @@ export default function ProjectDetailsPage() {
         
         dark:bg-gray-950 dark:bg-opacity-75 dark:border-black/40"
           type="button"
-          onClick={() => router.push("/#projects")}
+          onClick={() => {
+            setActiveSection("Projects");
+            setTimeOfLastClick(Date.now());
+            router.push("/#projects");
+          }}
         >
           Back
         </button>

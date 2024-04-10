@@ -1,6 +1,6 @@
 "use client";
 
-import { projectDetails, projectsData } from "@/lib/data";
+// import { projectDetails, projectsData } from "@/lib/data";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
@@ -74,6 +74,7 @@ export default function Project({
           <h3 className="text-2xl font-semibold mb-2">{title}</h3>
 
           <Link
+            // scroll={false}
             href={`/project-details/${index}`}
             className="underline text-[0.9rem] text-gray-800 uppercase tracking-wider mt-4 mb-3 flex items-center"
           >
