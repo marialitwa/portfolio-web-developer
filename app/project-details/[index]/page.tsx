@@ -20,10 +20,9 @@ export default function ProjectDetailsPage() {
   const params = useParams();
 
   const index = params.index as string;
+  // console.log(params);
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
-  // console.log(params);
 
   return (
     <div className="scroll-mt-32 mb-28">

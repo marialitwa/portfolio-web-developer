@@ -34,15 +34,16 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/517ece06e4b0f2c07592f79b/1438813079806-KRO5UGHV4TEZ2VQBFE8D/image-asset.jpeg?format=1000w"
+              // src="https://images.squarespace-cdn.com/content/v1/517ece06e4b0f2c07592f79b/1438813079806-KRO5UGHV4TEZ2VQBFE8D/image-asset.jpeg?format=1000w"
+              src="/assets/Portrait_MariaLitwa_CV_circle.png"
               alt="Portrait picture of Maria Litwa"
-              width="192"
-              height="192"
+              width="250"
+              height="250"
               quality="95"
               // default quality set by Next.js is 75 or 80
               priority={true}
               // => image will load as fast as possible
-              className="h-24 w-24 object-cover rounded-full border-[0.22rem] border-white shadow-xl dark:border-opacity-20"
+              className="h-32 w-32 object-cover rounded-full border-[0.22rem] border-white shadow-xl dark:border-opacity-20"
               // object-cover will preserve aspect-ratio
             />
           </motion.div>
