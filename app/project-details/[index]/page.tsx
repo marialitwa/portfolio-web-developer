@@ -13,7 +13,7 @@ type ProjectDetailsProps = {
   techStack: string;
   websiteUrl: string;
   githubUrl: string;
-  textAboutProcess: string;
+  problemsAndThoughts: string;
   lessonsLearned: string;
 };
 
@@ -110,7 +110,7 @@ export default function ProjectDetailsPage() {
             Problems and thought process
           </h3>
           <p className="leading-7">
-            {projectDetails[Number(index)].textAboutProcess}
+            {projectDetails[Number(index)].problemsAndThoughts}
           </p>
         </section>
 

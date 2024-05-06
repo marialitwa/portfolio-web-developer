@@ -98,7 +98,7 @@ export const projectDetails = [
     techStack: ["React", "React Context", "React Router", "JavaScript", "TypeScript", "MongoDB", "mongoose", "Express", "Node.js", "HTML", "CSS", "Tailwind CSS", "Styled Components", "Authentication", "Authorization", "JSON Web Token", "bcrypt"],
     websiteUrl: "https://new-in-town.vercel.app/",
     githubUrl: "https://github.com/marialitwa/mern-new-in-town",
-    textAboutProcess: "Like most projects, I ran into a few bumps along the way. One particularly difficult area was understanding how to structure server-side code and the database with MongoDB, and how it communicates with my frontend. As for the CSS, I wanted to learn Tailwind with this project. In the end though, my brain was too busy learning backend technologies and because of the greater familiarity, I often ended up using Styled Components. Looking back, I would use either Tailwind or Styled Components to have a clear and well-structured CSS.",
+    problemsAndThoughts: "Like most projects, I ran into a few bumps along the way. One particularly difficult area was understanding how to structure server-side code and the database with MongoDB, and how it communicates with my frontend. As for the CSS, I wanted to learn Tailwind with this project. In the end though, my brain was too busy learning backend technologies and because of the greater familiarity, I often ended up using Styled Components. Looking back, I would use either Tailwind or Styled Components to have a clear and well-structured CSS.",
     lessonsLearned: "I could spend all day describing the lessons that I learned while working on this project. It’s my first fullstack web application project and I'm still working on it. Developing the backend and frontend and implementing a whole bunch of backend technologies was definitely a lot to process and apply for the first time. I learned about middlewares, models, routes, controller functions, passport tokens, bcrypt, authentication and so on. I’d say the most important lesson was how backend and frontend work together and how the backend is structured in the MERN stack. I was very grateful to have supportive mentors around me that I could always ask for help. I really learned a lot during code reviews and pair programming sessions with them and it definitely helped me overcome some frustrating moments. I'm proud to have achieved so much and look forward to developing the app further.",
 
   },
@@ -106,11 +106,11 @@ export const projectDetails = [
     id: 2,
     projectTitle: "Das Beste des Tages.",
     projectDescription: "My App Das Beste des Tages. (The Best of Your Day.) helps to focus on the positive things on a daily basis. In the mornings you can reflect on what you're looking forward to today. In the evenings about what was your highlight during the day, what made you feel happy. My favorite feature is that you can treasure your chosen highlights, and that can serve as your feel good booster whenever you need one. I developed this app as my capstone project during the final four weeks of the neue fische Web Development Bootcamp in winter 2022. Please watch out: The design is optimized for mobile usage. Please switch your browser to responsive mode (iPhone SE/6/7/8).",
-    techStack: ["React", "Next.js (Page Router)", "JavaScript", "HTML", "CSS", "Styled Components", "LocalStorage"],
+    techStack: ["React", "Next.js (Page Router)", "JavaScript", "HTML", "CSS", "Styled Components", "LocalStorage", "uuid", "Jest", "user stories"],
     websiteUrl: "https://das-beste-des-tages.vercel.app/",
     githubUrl: "https://github.com/marialitwa/capstone-project",
-    textAboutProcess: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.",
-    lessonsLearned: "Lorem Lorem",
+    problemsAndThoughts: "This project was my first real frontend web app project, and as always there were some challenges to overcome. The biggest difficulty for me was creating the logic for the dynamic page routing to allow the user to navigate back and forth through the data and see their responses from that day. I was able to accomplish this together with an experienced senior programmer in a pair programming session, which was a great experience to learn from. I also put a lot of thought into the design and user flow by creating low-key wireframes and a 'Look & Feel' moodboard, to have a clear vision of the app as it speeds up the programming process. I was grateful for the feedback on my user stories from my fellow students, which helped to improve a clear and simple user experience.  I used Styled Components, because the structure of CSS-in-JS is much clearer and prevents overrides.",
+    lessonsLearned: "Here, too, I learned a lot, a lot, a lot. Apart from the technologies, one important thing I learned was that I shouldn't take too long to ask for help. It's definitely not that I'm afraid or too shy. It's more that I truely want to understand the problem and find a solution. Setting time limits during coding helped me to work independently and stay focused, avoiding frustration and wasted time. Also, I realized the importance of daily documentation of achievements to maintain motivation and focus on my progress rather than struggles.",
 
 
 
@@ -118,12 +118,12 @@ export const projectDetails = [
   {
     id: 3,
     projectTitle: "Rick & Morty.",
-    projectDescription: "NEXT.JS: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
+    projectDescription: "This web app is a mini refresh React project using the Rick & Morty REST-API to search for characters & display specific data about each character.",
     techStack: ["React", "JavaScript", "HTML", "CSS", "Styled Components"],
-    websiteUrl: "https://react-rick-and-morty-pi.vercel.app/",
+    websiteUrl: "https://react-rick-n-morty.vercel.app/",
     githubUrl: "https://github.com/marialitwa/react_rick-and-morty",
-    textAboutProcess: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.",
-    lessonsLearned: "Lorem Lorem",
+    problemsAndThoughts: "t.b.a.",
+    lessonsLearned: "t.b.a.",
   }
 
 
@@ -135,7 +135,7 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
-  "Next.js",
+  "Next.js (Page & App Router)",
   "Git",
   "GitHub",
   "Tailwind CSS",
@@ -143,12 +143,14 @@ export const skillsData = [
   "Framer Motion",
   "Bootstrap",
   "BEM",
+  "REST API",
   "Node.js",
   "MongoDB",
   "mongoose",
   "Express.js",
   "Postman",
   "npm",
+  "User Stories",
   "Accessibility",
   "Agile Methods",
   "SCRUM",
