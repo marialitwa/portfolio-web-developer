@@ -13,6 +13,8 @@ type ProjectDetailsProps = {
   techStack: string;
   websiteUrl: string;
   githubUrl: string;
+  textAboutProcess: string;
+  lessonsLearned: string;
 };
 
 export default function ProjectDetailsPage() {
@@ -109,6 +111,18 @@ export default function ProjectDetailsPage() {
           </h3>
           <p className="leading-7">
             {projectDetails[Number(index)].textAboutProcess}
+          </p>
+        </section>
+
+        <section
+          className="w-[55rem] sm:mb-40 flex flex-col items-center border border-white border-opacity-40
+         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
+        >
+          <h3 className="text-[1.35rem] capitalize mb-6">
+            Lessons learned
+          </h3>
+          <p className="leading-7">
+            {projectDetails[Number(index)].lessonsLearned}
           </p>
         </section>
       </div>
