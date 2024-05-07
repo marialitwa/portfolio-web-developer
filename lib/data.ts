@@ -1,6 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+// import { FaReact } from "react-icons/fa";
+import { TiImage } from "react-icons/ti";
+
 import { LuGraduationCap } from "react-icons/lu";
 import newInTownImg from "@/public/assets/mern-new-in-town.png";
 import dasBesteDesTagesImg from "@/public/assets/nextjs-das-beste-des-tages.png";
@@ -38,29 +40,31 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full-Stack Developer",
-    location: "Berlin, Germany",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2024 - present",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Berlin, Germany",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2024 - present",
-  },
-  {
     title: "Graduated bootcamp",
     location: "Berlin, Germany",
     description:
-      "I graduated after 5 months of studying fullstack web development at Code Academy Berlin. I immediately found a job as a front-end web developer.",
+      "I graduated after 5 months of studying fullstack web development at Code Academy Berlin. I'm open to full-time opportunities.",
+    // icon: React.createElement(FaReact),
     icon: React.createElement(LuGraduationCap),
-    date: "2024",
+    date: "Nov 2023 - April 2024",
   },
+  {
+    title: "Image editor",
+    location: "Bonn, Germany / remote",
+    description:
+      "I worked as a picture editor for Deutsche Welle in the online editorial team for 3 years.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - 2023",
+  },
+  {
+    title: "Photographer",
+    location: "Cologne, Germany & Middle East",
+    description:
+      "I worked as a portraiture & documentary photographer for NGOs, editorial and corporate clients.",
+    icon: React.createElement(TiImage),
+    date: "2012 - 2022",
+  },
+
 ] as const;
 
 export const projectsData = [
@@ -100,7 +104,6 @@ export const projectDetails = [
     githubUrl: "https://github.com/marialitwa/mern-new-in-town",
     problemsAndThoughts: "Like most projects, I ran into a few bumps along the way. One particularly difficult area was understanding how to structure server-side code and the database with MongoDB, and how it communicates with my frontend. As for the CSS, I wanted to learn Tailwind with this project. In the end though, my brain was too busy learning backend technologies and because of the greater familiarity, I often ended up using Styled Components. Looking back, I would use either Tailwind or Styled Components to have a clear and well-structured CSS.",
     lessonsLearned: "I could spend all day describing the lessons that I learned while working on this project. It’s my first fullstack web application project and I'm still working on it. Developing the backend and frontend and implementing a whole bunch of backend technologies was definitely a lot to process and apply for the first time. I learned about middlewares, models, routes, controller functions, passport tokens, bcrypt, authentication and so on. I’d say the most important lesson was how backend and frontend work together and how the backend is structured in the MERN stack. I was very grateful to have supportive mentors around me that I could always ask for help. I really learned a lot during code reviews and pair programming sessions with them and it definitely helped me overcome some frustrating moments. I'm proud to have achieved so much and look forward to developing the app further.",
-
   },
   {
     id: 2,
@@ -111,9 +114,6 @@ export const projectDetails = [
     githubUrl: "https://github.com/marialitwa/capstone-project",
     problemsAndThoughts: "This project was my first real frontend web app project, and as always there were some challenges to overcome. The biggest difficulty for me was creating the logic for the dynamic page routing to allow the user to navigate back and forth through the data and see their responses from that day. I was able to accomplish this together with an experienced senior programmer in a pair programming session, which was a great experience to learn from. I also put a lot of thought into the design and user flow by creating low-key wireframes and a 'Look & Feel' moodboard, to have a clear vision of the app as it speeds up the programming process. I was grateful for the feedback on my user stories from my fellow students, which helped to improve a clear and simple user experience.  I used Styled Components, because the structure of CSS-in-JS is much clearer and prevents overrides.",
     lessonsLearned: "Here, too, I learned a lot, a lot, a lot. Apart from the technologies, one important thing I learned was that I shouldn't take too long to ask for help. It's definitely not that I'm afraid or too shy. It's more that I truely want to understand the problem and find a solution. Setting time limits during coding helped me to work independently and stay focused, avoiding frustration and wasted time. Also, I realized the importance of daily documentation of achievements to maintain motivation and focus on my progress rather than struggles.",
-
-
-
   },
   {
     id: 3,
