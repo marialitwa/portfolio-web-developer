@@ -12,6 +12,7 @@ type ProjectProps = {
   description: string;
   tags:
     | readonly [
+        "MERN",
         "React",
         "TypeScript",
         "MongoDB",
