@@ -75,7 +75,7 @@ export default function Contact() {
           type="email"
           id="email"
           name="senderEmail"
-          placeholder="ada.lovelace@example.com"
+          placeholder="ada.lovelace@email.com"
           // client side validation:
           maxLength={500}
           required
