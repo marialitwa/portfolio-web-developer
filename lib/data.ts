@@ -43,14 +43,14 @@ export const experiencesData = [
     title: "Graduated bootcamp",
     location: "Berlin, Germany",
     description:
-      "I graduated after 5 months of studying fullstack web development at Code Academy Berlin. I'm open to full-time opportunities.",
+      "I graduated after 5 months of studying fullstack web development full-time at Code Academy Berlin with 840 hrss of everyday coding. I'm open to full-time opportunities.",
     // icon: React.createElement(FaReact),
     icon: React.createElement(LuGraduationCap),
     date: "Nov 2023 - April 2024",
   },
   {
     title: "Image editor",
-    location: "Bonn, Germany / remote",
+    location: "Cologne, Germany / remote",
     description:
       "I worked as a picture editor for Deutsche Welle in the online editorial team for 3 years.",
     icon: React.createElement(CgWorkAlt),
@@ -73,7 +73,7 @@ export const projectsData = [
     title: "New in Town.",
     description:
       "Collect all new favorite spots in one app to discover the place you have moved to.",
-    tags: ["React", "TypeScript", "MongoDB", "Tailwind CSS", "Styled Components"],
+    tags: ["MERN", "React", "TypeScript", "MongoDB", "Tailwind CSS", "Styled Components"],
     imageUrl: newInTownImg,
 
   },
