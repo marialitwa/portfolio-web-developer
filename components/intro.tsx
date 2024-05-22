@@ -108,7 +108,7 @@ export default function Intro() {
         </Link>
 
         <a
-          href="/assets/CV_BlankoTest.pdf"
+          href="/assets/CV_MariaLitwa_Frontend.pdf"
           download={true}
           className="group bg-white px-7 py-3 flex items-center 
           gap-2 rounded-full font-medium outline-none focus:scale-110 
