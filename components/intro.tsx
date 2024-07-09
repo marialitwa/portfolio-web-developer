@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+// import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -34,7 +34,6 @@ export default function Intro() {
             }}
           >
             <Image
-              // src="https://images.squarespace-cdn.com/content/v1/517ece06e4b0f2c07592f79b/1438813079806-KRO5UGHV4TEZ2VQBFE8D/image-asset.jpeg?format=1000w"
               src="/assets/Portrait_MariaLitwa_CV_circle.png"
               alt="Portrait picture of Maria Litwa"
               width="250"
@@ -47,21 +46,6 @@ export default function Intro() {
               // object-cover will preserve aspect-ratio
             />
           </motion.div>
-          {/* EMOJI optional */}
-          {/* <motion.span
-            className="text-4xl absolute bottom-0 right-0"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              // stiffness defines intensity of bounce effect
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            🦩
-          </motion.span> */}
         </div>
       </div>
 
@@ -107,7 +91,8 @@ export default function Intro() {
           />{" "}
         </Link>
 
-        <a
+        {/* ===== Disabled Download CV button ===== */}
+        {/* <a
           href="/assets/CV_MariaLitwa_Frontend.pdf"
           download={true}
           className="group bg-white px-7 py-3 flex items-center 
@@ -120,8 +105,7 @@ export default function Intro() {
             className="opacity-60 
           group-hover:translate-y-1 transition"
           />
-        </a>
-
+        </a> */}
         <a
           href="https://www.linkedin.com/in/maria-litwa/"
           target="_blank"
@@ -132,7 +116,6 @@ export default function Intro() {
         >
           <BsLinkedin />
         </a>
-
         <a
           href="https://www.github.com/marialitwa"
           target="_blank"
