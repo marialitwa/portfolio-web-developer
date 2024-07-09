@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 import { projectDetails } from "@/lib/data";
 import SectionHeading from "@/components/section-heading";
 import { useParams, useRouter } from "next/navigation";
@@ -15,6 +16,9 @@ type ProjectDetailsProps = {
   githubUrl: string;
   problemsAndThoughts: string;
   lessonsLearned: string;
+  imageUrl: StaticImageData;
+  appScreenshot01: StaticImageData;
+  appScreenshot02: StaticImageData;
 };
 
 export default function ProjectDetailsPage() {
@@ -22,7 +26,6 @@ export default function ProjectDetailsPage() {
   const params = useParams();
 
   const index = params.index as string;
-  // console.log(params);
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -45,17 +48,21 @@ export default function ProjectDetailsPage() {
         </button>
       </header>
       <div className="flex flex-col items-center -mt-6">
+        {/*  -- TITLE -- */}
         <section
-          className="w-[55rem] sm:mb-24 border border-white border-opacity-40
+          className="w-[55rem] sm:mb-40 border border-white border-opacity-40
          bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8"
         >
           <SectionHeading>
             {projectDetails[Number(index)].projectTitle}
           </SectionHeading>
-          <p className="mb-10 leading-7">
+
+          {/*  -- DESCRIPTION -- */}
+          <p className="mb-6 leading-7">
             {projectDetails[Number(index)].projectDescription}
           </p>
 
+          {/*  -- LINKS -- */}
           <div className="flex items-center justify-center gap-6 mb-6">
             <Link
               target="_blank"
@@ -80,9 +87,30 @@ export default function ProjectDetailsPage() {
           </div>
         </section>
 
+        {/*  -- APP IMPRESSIONS -- */}
+        <section
+          className="w-[55rem] sm:mb-40 flex flex-col items-center border border-white border-opacity-40
+         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
+        >
+          <h3 className="text-[1.35rem] capitalize mb-6">App impressions</h3>
+          <Image
+            className="justify-center items-center mb-8"
+            src={projectDetails[Number(index)].appScreenshot01}
+            alt="App impressions"
+            quality={95}
+          />
+          <Image
+            className="justify-center items-center"
+            src={projectDetails[Number(index)].appScreenshot02}
+            alt="App impressions"
+            quality={95}
+          />
+        </section>
+
+        {/*  -- TECH STACK -- */}
         <section
           className="w-[55rem] sm:mb-40 border border-white border-opacity-40
-         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8"
+         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
         >
           <h3 className="text-[1.35rem] capitalize mb-8 text-center">
             Tech stack
@@ -102,6 +130,7 @@ export default function ProjectDetailsPage() {
           </ul>
         </section>
 
+        {/* -- PROBLEMS AND THOUGHTS -- */}
         <section
           className="w-[55rem] sm:mb-40 flex flex-col items-center border border-white border-opacity-40
          bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
@@ -114,13 +143,12 @@ export default function ProjectDetailsPage() {
           </p>
         </section>
 
+        {/* -- LESSONS LEARNED -- */}
         <section
           className="w-[55rem] sm:mb-40 flex flex-col items-center border border-white border-opacity-40
          bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
         >
-          <h3 className="text-[1.35rem] capitalize mb-6">
-            Lessons learned
-          </h3>
+          <h3 className="text-[1.35rem] capitalize mb-6">Lessons learned</h3>
           <p className="leading-7">
             {projectDetails[Number(index)].lessonsLearned}
           </p>
