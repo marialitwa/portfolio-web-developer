@@ -77,7 +77,7 @@ export default function Project({
           <Link
             // scroll={false}
             href={`/project-details/${index}`}
-            className="underline text-[0.9rem] text-gray-800 uppercase tracking-wider mt-4 mb-3 flex items-center"
+            className="underline text-[0.9rem] text-gray-800 uppercase tracking-wider mt-4 mb-3 flex items-center dark:text-white/80"
           >
             View project
             <BsArrowRight
