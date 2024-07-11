@@ -24,11 +24,13 @@ export default function About() {
         After graduating with a diploma degree in{" "}
         <span className="font-medium">Communications Design</span> at FH
         Dortmund and working for 10 years as a documentary & portrait
-        photographer, I decided to pursue my passion for programming. I enrolled
-        in a coding bootcamp and learned{" "}
-        <span className="font-medium">Fullstack Web Development</span>. I like
-        to stay busy and always have a project in the works. Take a look at some
-        of the applications I’ve dedicated my time to.{" "}
+        photographer, I decided to pursue my passion for Web Development. I
+        enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium">Frontend</span> and later also{" "}
+        <span className="font-medium">Fullstack Web Development</span> to
+        exhance my skills. I like to stay busy and always have a project in the
+        works. Take a look at some of the applications I’ve dedicated my time
+        to.{" "}
       </p>
       <p className="mb-6">
         I'm currently looking for a{" "}
@@ -51,8 +53,8 @@ export default function About() {
       </p>
       <p>
         <span className="italic">When I'm not coding</span>, I love cooking{" "}
-        delicious vegan dishes or sweet treats. I enjoy going to the gym, do
-        yoga or meet & chat with my friends.
+        delicious vegan dishes and sweet treats. I enjoy going to the gym, do
+        yoga, meet & chat with my friends and travel the world.
       </p>
     </motion.section>
   );
