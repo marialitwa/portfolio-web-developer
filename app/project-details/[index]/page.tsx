@@ -33,7 +33,7 @@ export default function ProjectDetailsPage() {
     <div className="scroll-mt-32 mb-28">
       <header className="z-[999] relative">
         <button
-          className="fixed top-5 left-5 px-5 py-2 text-[0.9rem] font-medium capitalize text-gray-600 rounded-full border border-white border-opacity-40
+          className="fixed sm:top-5 top-3 sm:left-5 left-3 sm:px-5 px-3 sm:py-2 py-1 text-[0.9rem] font-medium capitalize text-gray-600 rounded-full border border-white border-opacity-40
         bg-white bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] 
         
         dark:bg-gray-950 dark:bg-opacity-75 dark:border-black/40"
@@ -47,11 +47,12 @@ export default function ProjectDetailsPage() {
           Back
         </button>
       </header>
-      <div className="flex flex-col items-center -mt-6">
+
+      <div className="flex flex-col items-center -mt-6 mx-10">
         {/*  -- TITLE -- */}
         <section
-          className="w-[55rem] sm:mb-40 border border-white border-opacity-40
-         bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8"
+          className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 border border-white border-opacity-40
+         bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 "
         >
           <SectionHeading>
             {projectDetails[Number(index)].projectTitle}
@@ -63,7 +64,8 @@ export default function ProjectDetailsPage() {
           </p>
 
           {/*  -- LINKS -- */}
-          <div className="flex items-center justify-center gap-6 mb-6">
+          {/* <div className="flex items-center justify-center gap-6 mb-6"> */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 mb-3 sm:mt-8">
             <Link
               target="_blank"
               className="bg-gray-900 text-white px-7 py-3 
@@ -89,7 +91,7 @@ export default function ProjectDetailsPage() {
 
         {/*  -- APP IMPRESSIONS -- */}
         <section
-          className="w-[55rem] sm:mb-40 flex flex-col items-center border border-white border-opacity-40
+          className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 flex flex-col items-center border border-white border-opacity-40
          bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
         >
           <h3 className="text-[1.35rem] capitalize mb-6">App impressions</h3>
@@ -109,7 +111,7 @@ export default function ProjectDetailsPage() {
 
         {/*  -- TECH STACK -- */}
         <section
-          className="w-[55rem] sm:mb-40 border border-white border-opacity-40
+          className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 text-center border border-white border-opacity-40
          bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
         >
           <h3 className="text-[1.35rem] capitalize mb-8 text-center">
@@ -132,7 +134,7 @@ export default function ProjectDetailsPage() {
 
         {/* -- PROBLEMS AND THOUGHTS -- */}
         <section
-          className="w-[55rem] sm:mb-40 flex flex-col items-center border border-white border-opacity-40
+          className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 flex flex-col items-center border border-white border-opacity-40
          bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
         >
           <h3 className="text-[1.35rem] capitalize mb-6">
@@ -145,7 +147,7 @@ export default function ProjectDetailsPage() {
 
         {/* -- LESSONS LEARNED -- */}
         <section
-          className="w-[55rem] sm:mb-40 flex flex-col items-center border border-white border-opacity-40
+          className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 flex flex-col items-center border border-white border-opacity-40
          bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
         >
           <h3 className="text-[1.35rem] capitalize mb-6">Lessons learned</h3>
