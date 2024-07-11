@@ -36,7 +36,7 @@ export default function ProjectDetailsPage() {
           className="fixed sm:top-5 top-3 sm:left-5 left-3 sm:px-5 px-3 sm:py-2 py-1 text-[0.9rem] font-medium capitalize text-gray-600 rounded-full border border-white border-opacity-40
         bg-white bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] 
         
-        dark:bg-gray-950 dark:bg-opacity-75 dark:border-black/40"
+        dark:bg-gray-950 dark:bg-opacity-75 dark:border-white/20 dark:text-white/80"
           type="button"
           onClick={() => {
             setActiveSection("Projects");
@@ -52,7 +52,8 @@ export default function ProjectDetailsPage() {
         {/*  -- TITLE -- */}
         <section
           className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 border border-white border-opacity-40
-         bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 "
+         bg-white bg-opacity-60 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
+         dark:border dark:border-white/5"
         >
           <SectionHeading>
             {projectDetails[Number(index)].projectTitle}
@@ -92,7 +93,8 @@ export default function ProjectDetailsPage() {
         {/*  -- APP IMPRESSIONS -- */}
         <section
           className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 flex flex-col items-center border border-white border-opacity-40
-         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
+         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
+         dark:border dark:border-white/5"
         >
           <h3 className="text-[1.35rem] capitalize mb-6">App impressions</h3>
           <Image
@@ -112,7 +114,8 @@ export default function ProjectDetailsPage() {
         {/*  -- TECH STACK -- */}
         <section
           className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 text-center border border-white border-opacity-40
-         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
+         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
+         dark:border dark:border-white/5"
         >
           <h3 className="text-[1.35rem] capitalize mb-8 text-center">
             Tech stack
@@ -135,7 +138,8 @@ export default function ProjectDetailsPage() {
         {/* -- PROBLEMS AND THOUGHTS -- */}
         <section
           className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 flex flex-col items-center border border-white border-opacity-40
-         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
+         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
+         dark:border dark:border-white/5"
         >
           <h3 className="text-[1.35rem] capitalize mb-6">
             Problems and thought process
@@ -148,7 +152,8 @@ export default function ProjectDetailsPage() {
         {/* -- LESSONS LEARNED -- */}
         <section
           className="max-w-[50rem] sm:-max-w-[22rem] sm:mb-40 mb-28 flex flex-col items-center border border-white border-opacity-40
-         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10"
+         bg-white bg-opacity-90 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-3xl px-10 py-8 -mt-10 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
+         dark:border dark:border-white/5"
         >
           <h3 className="text-[1.35rem] capitalize mb-6">Lessons learned</h3>
           <p className="leading-7">
