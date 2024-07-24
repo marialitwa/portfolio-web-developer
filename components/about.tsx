@@ -28,7 +28,7 @@ export default function About() {
         enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">Frontend</span> and later also{" "}
         <span className="font-medium">Fullstack Web Development</span> to
-        exhance my skills. I like to stay busy and always have a project in the
+        enhance my skills. I like to stay busy and always have a project in the
         works. Take a look at some of the applications I’ve dedicated my time
         to.{" "}
       </p>
