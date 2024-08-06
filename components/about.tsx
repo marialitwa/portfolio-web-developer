@@ -41,20 +41,21 @@ export default function About() {
         <span className="italic">passionate</span> about beautiful UX/UI and
         clean code.{" "}
         <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
+        solution-focused aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
         is <span className="font-medium">React</span> and{" "}
         <span className="font-medium">Next.js</span>. I'm also familiar with{" "}
         <span className="font-medium">TypeScript, Tailwind CSS, Node.js,</span>{" "}
         and <span className="font-medium">MongoDB</span>. I am structured,
         focused and dedicated with empathetic social & communication skills.
-        Also, I’m a strong believer in lifelong learning and love to work with
-        a thriving & supportive team.
+        Also, I’m a strong believer in 
+        <span className="font-medium">lifelong learning</span> and love to work
+        with a thriving & supportive team.
       </p>
       <p>
         <span className="italic">When I'm not coding</span>, I love cooking{" "}
         delicious vegan dishes and sweet treats. I enjoy going to the gym, do
-        yoga, meet & chat with my friends and travel the world .
+        yoga, meet & chat with my friends and travel the world.
       </p>
     </motion.section>
   );
